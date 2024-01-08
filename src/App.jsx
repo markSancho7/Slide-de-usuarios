@@ -1,5 +1,10 @@
+import User from './components/User/User';
+import { USERS } from './constants/users';
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	USERS.map(user => {
+		return <User key={user.userId} {...user}></User>;
+	});
 };
 
 export default App;
