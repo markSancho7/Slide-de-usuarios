@@ -6,6 +6,7 @@ const User = props => {
 			<h3>{props.name}</h3>
 			<h4>{props.username}</h4>
 			<h4>{props.email}</h4>
+			<p>{props.isActive ? 'Activo':'Inactivo'}</p>
 		</>
 	);
 };
